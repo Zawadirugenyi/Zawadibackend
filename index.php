@@ -20,7 +20,8 @@
        
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" name="email" class="form-control" id="email" required>
+            <input type="email" name="email" class="form-control" id="email" pattern="[0-9]{6}@.*" required>
+            <!-- pattern="[0-9]{6}@.*" ensures 6 digits before @ symbol -->
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
@@ -32,6 +33,7 @@
     <p>Don't have an account? <a href="signup.php">Sign up here</a></p>
 
 </div>
+
 
 
 
